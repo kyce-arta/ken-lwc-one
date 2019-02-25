@@ -1,0 +1,25 @@
+<!--
+  @Component Name     : myProfile.html
+  @Description        : 
+  @Author             : phUser@phDomain.com
+  @Group              : 
+  @Last Modified By   : phUser@phDomain.com
+  @Last Modified On   : 25/02/2019, 3:44:46 PM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    25/02/2019, 3:44:46 PM   phUser@phDomain.com     Initial Version
+-->
+<template>
+    <div id='waiting' if:false={ready}>Loading</div>
+    <div id='complete' if:true={ready}>
+        <div>FirstName: {fname}</div>
+        <div>LastName: {lname}</div>
+        <div>Age: {age}</div>
+        <div>E-mail: {email}</div>
+        <lightning-badge label={intro-subtitle1}></lightning-badge>
+        <lightning-badge label={intro-subtitle2}></lightning-badge>
+        <div><img src={picUrl} /></div>
+    </div>
+</template>
